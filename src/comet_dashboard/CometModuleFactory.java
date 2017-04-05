@@ -1,4 +1,4 @@
-package CometDashboardClient;
+package comet_dashboard;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
@@ -49,12 +49,15 @@ public class CometModuleFactory
 		}
 	}
 	//@SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked")
 	static public void registerModules()
 	{
 		ClassLoader classLoader = Main.class.getClassLoader();
 		try {
-			Class<? extends CometModule> aClass = (Class<? extends CometModule>) classLoader.loadClass("CometDashboardClient.TestModule");
-			registerModule("test", aClass);
+			//Class<?> unchecked_class = classLoader.loadClass("comet_dashboard.stock_modules.TestModule");
+			Class<?> unchecked_class = classLoader.loadClass("comet_dashboard.stock_modules.TestModule");
+			Class<? extends CometModule> add_class = (Class<? extends CometModule>) unchecked_class;
+			registerModule("test", add_class);
 	    } catch (ClassNotFoundException e) {
 	        e.printStackTrace();
 	    } catch (DuplicateModuleNameException e)

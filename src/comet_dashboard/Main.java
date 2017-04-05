@@ -1,5 +1,4 @@
-package CometDashboardClient;
-import CometDashboardClient.*;
+package comet_dashboard;
 
 public class Main
 {

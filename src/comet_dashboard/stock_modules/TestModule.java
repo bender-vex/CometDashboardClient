@@ -1,4 +1,6 @@
-package CometDashboardClient;
+package comet_dashboard.stock_modules;
+
+import comet_dashboard.CometModule;
 
 @SuppressWarnings("serial")
 public class TestModule extends CometModule

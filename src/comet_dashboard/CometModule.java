@@ -1,4 +1,4 @@
-package CometDashboardClient;
+package comet_dashboard;
 
 import javax.swing.JPanel;
 

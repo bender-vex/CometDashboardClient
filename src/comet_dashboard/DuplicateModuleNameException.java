@@ -1,4 +1,4 @@
-package CometDashboardClient;
+package comet_dashboard;
 
 @SuppressWarnings("serial")
 public class DuplicateModuleNameException extends Exception
